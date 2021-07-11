@@ -34,6 +34,8 @@ gem 'faraday'
 gem "figaro"
 gem 'rake'
 
+gem 'graphql'
+
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 
@@ -47,6 +49,7 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'rubocop-rails'
   gem 'web-console', '>= 3.3.0'
+  gem 'graphiql-rails'
 end
 
 group :test do
