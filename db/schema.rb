@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_11_204604) do
+ActiveRecord::Schema.define(version: 2021_07_11_211658) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(version: 2021_07_11_204604) do
     t.string "animal_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "owner_id"
+    t.index ["owner_id"], name: "index_packs_on_owner_id"
   end
 
   create_table "pet_names", force: :cascade do |t|
@@ -56,6 +58,7 @@ ActiveRecord::Schema.define(version: 2021_07_11_204604) do
 
   add_foreign_key "liked_names", "packs"
   add_foreign_key "liked_names", "pet_names"
+  add_foreign_key "packs", "users", column: "owner_id"
   add_foreign_key "user_packs", "packs"
   add_foreign_key "user_packs", "users"
 end
