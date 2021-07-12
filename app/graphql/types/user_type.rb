@@ -4,5 +4,13 @@ module Types
     field :name, String, null: true
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
+
+    field :user_packs, [Types::UserPackType], null: true
+    field :user_packs_count, Integer, null: true
+    
+    def user_packs_count
+      user.user_packs.size
+    end
+
   end
 end
