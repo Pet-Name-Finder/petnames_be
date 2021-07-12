@@ -7,9 +7,9 @@ module Types
 
     field :user_packs, [Types::UserPackType], null: true
     field :user_packs_count, Integer, null: true
-    
+
     def user_packs_count
-      user.user_packs.size
+      object.user_packs.count
     end
 
   end
