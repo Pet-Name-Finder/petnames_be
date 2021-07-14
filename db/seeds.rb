@@ -9,7 +9,7 @@
 # Pack.destroy_all
 
 5.times do
-  user = User.create(name: Faker::TvShows::Friends.character)
+  user = User.create(email: Faker::TvShows::Friends.character)
 end
 
 5.times do
