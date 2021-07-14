@@ -20,7 +20,7 @@ user_pack1 = UserPack.create(pack_id: 1, user_id: 1)
 user_pack2 = UserPack.create(pack_id: 1, user_id: 2)
 user_pack3 = UserPack.create(pack_id: 2, user_id: 3)
 
-20.times do
+10.times do
   pet_name = PetName.create(name: Faker::TvShows::Friends.character, viewed: [true, false].sample)
 end
 
