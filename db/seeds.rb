@@ -5,15 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-# User.destroy_all
-# Pack.destroy_all
+UserPack.destroy_all
+LikedName.destroy_all
+User.destroy_all
+Pack.destroy_all
+PetName.destroy_all
 
 5.times do
   user = User.create(email: Faker::TvShows::Friends.character)
 end
 
 5.times do
-  pack = Pack.create(animal_gender: ["male", "female", "irrelevant"].sample, animal_type: ["cat", "dog", "other"].sample, owner_id: [1..3].sample)
+  pack = Pack.create(animal_gender: ["male", "female", "irrelevant"].sample, animal_type: ["cat", "dog", "other"].sample, owner_id: [1..3].sample, name: Faker::TvShows::Simpsons.character )
 end
 
 user_pack1 = UserPack.create(pack_id: 1, user_id: 1)
