@@ -84,5 +84,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   
   # Rack-CORS allowed origin in this environment
-config.allowed_cors_origins = ["https://pet-name-finder-be.herokuapp.com"]
+config.allowed_cors_origins = ["https://pet-name-finder-be.herokuapp.com", "http://locahost:3000"]
 end
