@@ -43,5 +43,15 @@ module Types
     field :pet_name, Types::PetNameType, null: false do
       argument :id, ID, required: true
     end
+    
+    # /user_packs
+    field :user_packs, [Types::UserPackType], null: false
+    
+    def user_packs
+      UserPack.all
+    end
+    field :user_pack, Types::UserPackType, null: false do
+      argument :id, ID, required: true
+    end
   end
 end
