@@ -17,7 +17,7 @@
 
 ## Initial Setup
 1. Fork the Project
-2. Set up the rails database ```rails db:{create,migrate}```
+2. Set up the rails database ```rails db:{create,migrate,seed}```
 3. Find a name!
 
 ## Request links
