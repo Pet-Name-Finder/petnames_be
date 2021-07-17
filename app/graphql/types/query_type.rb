@@ -24,6 +24,10 @@ module Types
       argument :id, ID, required: true
     end
     
+    def pack(id:)
+      Pack.find(id)
+    end
+    
     # /liked_names
     field :liked_names, [Types::LikedNameType], null: false
     
@@ -32,6 +36,10 @@ module Types
     end
     field :liked_name, Types::LikedNameType, null: false do
       argument :id, ID, required: true
+    end
+    
+    def liked_name(id:)
+      LikedName.find(id)
     end
     
     # /pet_names
@@ -52,6 +60,10 @@ module Types
     end
     field :user_pack, Types::UserPackType, null: false do
       argument :id, ID, required: true
+    end
+    
+    def user_pack(id:)
+      UserPack.find(id)
     end
   end
 end

@@ -6,7 +6,9 @@ module Types
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
 
     field :user_packs, [Types::UserPackType], null: true
+    field :liked_names, [Types::LikedNameType], null: true
     field :user_packs_count, Integer, null: true
+
 
     def user_packs_count
       object.user_packs.count

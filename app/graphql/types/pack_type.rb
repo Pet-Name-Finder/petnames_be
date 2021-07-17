@@ -9,5 +9,7 @@ module Types
     field :owner_id, Integer, null: true
     
     field :users, [Types::UserType], null: true
+    field :user_packs, [Types::UserPackType], null: true
+    field :liked_names, [Types::LikedNameType], null: true
   end
 end
