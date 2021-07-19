@@ -14,20 +14,6 @@ module Types
       User.find(id)
     end
     
-    # /packs
-    field :packs, [Types::PackType], null: false
-    
-    def packs
-      Pack.all
-    end
-    field :pack, Types::PackType, null: false do
-      argument :id, ID, required: true
-    end
-    
-    def pack(id:)
-      Pack.find(id)
-    end
-    
     # /liked_names
     field :liked_names, [Types::LikedNameType], null: false
     
@@ -50,20 +36,6 @@ module Types
     end
     field :pet_name, Types::PetNameType, null: false do
       argument :id, ID, required: true
-    end
-    
-    # /user_packs
-    field :user_packs, [Types::UserPackType], null: false
-    
-    def user_packs
-      UserPack.all
-    end
-    field :user_pack, Types::UserPackType, null: false do
-      argument :id, ID, required: true
-    end
-    
-    def user_pack(id:)
-      UserPack.find(id)
     end
   end
 end
