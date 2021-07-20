@@ -24,11 +24,11 @@ liked_name4 = LikedName.create!(user_id: 1, pet_name_id: 4, liked: [true, false]
 liked_name5 = LikedName.create!(user_id: 1, pet_name_id: 5, liked: [true, false].sample)
 liked_name6 = LikedName.create!(user_id: 1, pet_name_id: 6, liked: [true, false].sample)
 liked_name7 = LikedName.create!(user_id: 1, pet_name_id: 7, liked: [true, false].sample)
-liked_name8 = LikedName.create!(user_id: 1, pet_name_id: 8)
+liked_name8 = LikedName.create!(user_id: 1, pet_name_id: 8, liked: [true, false].sample)
 
 liked_name9 = LikedName.create!(user_id: 2, pet_name_id: 1, liked: true)
 liked_name10 = LikedName.create!(user_id: 2, pet_name_id: 2, liked: false)
 liked_name11 = LikedName.create!(user_id: 2, pet_name_id: 3, liked: [true, false].sample)
 liked_name12 = LikedName.create!(user_id: 2, pet_name_id: 4, liked: [true, false].sample)
 liked_name13 = LikedName.create!(user_id: 2, pet_name_id: 5, liked: [true, false].sample)
-liked_name14 = LikedName.create!(user_id: 2, pet_name_id: 6)
+liked_name14 = LikedName.create!(user_id: 2, pet_name_id: 6, liked: [true, false].sample)
