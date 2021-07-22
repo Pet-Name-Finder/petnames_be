@@ -25,8 +25,8 @@
 
 
 ## Contributors
-- Zach
-- Ellie
-- Alexander
-- Ryan
-- Kseniya
+- Zach Johnson
+- Ellie Azaveda
+- Alexander Brueck
+- Ryan Miller
+- Kseniya Kudzelich
