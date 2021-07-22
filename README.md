@@ -12,7 +12,7 @@
 * Focus on communication between front-end and back-end teams in order to complete and deploy features that have been outlined by the project spec
 
 ## Schema
-![schema](https://i.ibb.co/ZH2Y9z0/Screen-Shot-2021-07-21-at-9-36-29-AM.png)
+![schema](https://i.ibb.co/tzS8Yfv/Screen-Shot-2021-07-21-at-6-19-28-PM.png)
 
 
 
